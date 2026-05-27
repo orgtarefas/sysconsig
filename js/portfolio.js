@@ -1,5 +1,5 @@
 // ============================================
-// BOA OPÇÃO - PORTFÓLIO JAVASCRIPT
+// SYSCONSIG - PORTFÓLIO JAVASCRIPT
 // ============================================
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -194,7 +194,7 @@ function isElementInViewport(el) {
 // Função para abrir WhatsApp (pode ser chamada de outros lugares)
 function abrirWhatsApp(mensagem) {
     const numero = '5511999999999'; // Substituir pelo número real
-    const texto = mensagem || 'Olá! Gostaria de saber mais sobre os serviços da BOA OPÇÃO.';
+    const texto = mensagem || 'Olá! Gostaria de saber mais sobre os serviços da SYSCONSIG.';
     const url = `https://wa.me/${numero}?text=${encodeURIComponent(texto)}`;
     window.open(url, '_blank');
 }
@@ -220,5 +220,5 @@ function initLazyLoading() {
     images.forEach(img => imageObserver.observe(img));
 }
 
-console.log('🚀 BOA OPÇÃO - Portfólio carregado com sucesso!');
+console.log('🚀 SYSCONSIG - Portfólio carregado com sucesso!');
 console.log('📱 Sistema independente disponível em: /sistema/acesso_restrito.html');
