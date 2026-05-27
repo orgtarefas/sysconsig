@@ -1,15 +1,15 @@
 // ============================================
-// SISTEMA BOA OPÇÃO - JAVASCRIPT COMPLETO
+// SISTEMA SYSCONSIG - JAVASCRIPT COMPLETO
 // ============================================
 
 // Configuração do Firebase
 const firebaseConfig = {
-    apiKey: "AIzaSyCmTzre-Jh86Xh3KkH09DqxXs2J9nDZxFE",
-    authDomain: "boaopcaosistema.firebaseapp.com",
-    projectId: "boaopcaosistema",
-    storageBucket: "boaopcaosistema.firebasestorage.app",
-    messagingSenderId: "268788730410",
-    appId: "1:268788730410:web:c8eb5828342f1a5d655153"
+    apiKey: "AIzaSyBP2pWJrtsOsgtRJhUNnelS8163Qucf9IE",
+    authDomain: "sysconsig-96b8f.firebaseapp.com",
+    projectId: "sysconsig-96b8f",
+    storageBucket: "sysconsig-96b8f.firebasestorage.app",
+    messagingSenderId: "207642248702",
+    appId: "1:207642248702:web:d578ad8001f2a86d866caf"
 };
 
 // Inicializar Firebase
@@ -49,8 +49,8 @@ async function verificarOrganizacao() {
             const orgData = orgDoc.data();
             organizacaoAtiva = orgData.org_atv === true;
             
-            document.getElementById('orgName').textContent = orgData.nome_org || 'BOA OPÇÃO';
-            document.getElementById('orgSubName').textContent = orgData.sub_nome_org || 'SOLUÇÕES DE CRÉDITO';
+            document.getElementById('orgName').textContent = orgData.nome_org || 'SYSCONSIG';
+            document.getElementById('orgSubName').textContent = orgData.sub_nome_org || 'SISTEMA DE CRÉDITO';
             
             if (!organizacaoAtiva) {
                 mostrarStatus('⚠️ Organização inativa! Contate o administrador.', 'danger');
